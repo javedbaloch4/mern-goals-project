@@ -1,0 +1,28 @@
+{
+  "name": "mern-goals",
+  "version": "1.0.0",
+  "description": "MERN Project for goals setting",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javedbaloch4/mern-goals-project.git"
+  },
+  "author": "Javed Baloch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javedbaloch4/mern-goals-project/issues"
+  },
+  "homepage": "https://github.com/javedbaloch4/mern-goals-project#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.2.1"
+  }
+}
