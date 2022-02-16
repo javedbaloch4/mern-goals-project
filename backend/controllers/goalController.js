@@ -52,15 +52,15 @@ const deleteGoals = asyncHandler( async (req, res) => {
 
     // Error if not exists
     if(!goal) {
-        return response(400)
+         res.status(400)
         throw new Error('Goal not fond')
     }
 
     // Delete the user
-    await goal.remove
+    await goal.remove()
 
     // Respond back
-    res.status(200).json({message: `Deleted goal ${req.params.id}`})
+    res.status(200).json({ id: req.params.id })
 })
 
 module.exports = {

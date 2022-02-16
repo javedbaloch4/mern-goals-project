@@ -14,8 +14,9 @@ connectDB()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-// Goals Routes
+// Routes
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 // Error handler over ride express middleware
 app.use(errorHandler)
