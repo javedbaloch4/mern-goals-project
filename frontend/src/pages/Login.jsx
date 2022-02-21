@@ -57,7 +57,7 @@ function Login() {
               />
           </div>
           <div className="form-group">
-            <button class="btn btn-block">Login</button>
+            <button className="btn btn-block">Login</button>
           </div>
         </form>
       </section>
